@@ -1,2 +1,2 @@
 # alfred
-This project is a web application that allows users to register, login, and access a dashboard where they can view and manage their profile and data.
+The project is a web application that provides user authentication, registration, and a dashboard. Users can register, log in, and access their dashboard where they can view and manage their account information. The application features a modern design with a dark mode color scheme, and uses CSS to create a user-friendly interface. The application also uses Google Fonts to enhance the design. The code is organized and follows best practices for maintainability and scalability.
