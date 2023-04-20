@@ -19,7 +19,7 @@ $user = $stmt->fetch();
 // Verify that the password provided matches the hashed password in the database
 if (password_verify($user_password, $user['password'])) {
     // Password is correct, redirect the user to the home page
-    header('Location: ../pages/budgetApp/dashboard/home.php');
+    header('Location: ../pages/home/home.php');
     exit();
 } else {
     // Password is incorrect, display an error message
@@ -33,6 +33,6 @@ if (password_verify($user_password, $user['password'])) {
   <title>Login Form</title>
 </head>
 <body>
-  <?php require('../pages/login-form.php'); ?>
+  <?php require('../pages/login/login-form.php'); ?>
 </body>
 </html>
