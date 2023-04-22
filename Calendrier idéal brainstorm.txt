@@ -1,0 +1,58 @@
+Calendrier idéal brainstorm
+ 
+-calendrier 
+	-minutes/jour/semaines/mois/années
+		-voir tout ce qui est écrit pour une heure, donc que la cellule s'agrandisse
+	-pouvoir partager certaine choses et dautre non ( cochable )
+	-mise à jour automatique
+	-jours Férié
+	-phase lunaire
+	-tracker personnel
+	-tracker de santé mental avec huemeur general pour une journé et ou une semaine ( avec des emoji que je peut definir moi meme pour la base de données)
+	-tracker de santé qui peut etre connecter avec un appareil intelligent avec conseils ( qui peut etre télécharger pour partager avec ton medecin, entrainneur, psy... )
+	-tracker partageable
+	-tracker de routine cochable 
+	-résumer de trackers avec diagramme
+	-recherche
+	-version mobile et web et tablette
+	-météo et enregistré la météo réelle dune journé
+	-to do list ( se referer a google (tâches))
+	-SÉCURITÉ
+	-application photo intéger qui sait lire des informations sur l'image ( ex, je prend une photo avec des dates, jaimerais que l'app les mettres dans mon calendrier a la bonne dates et                  
+	non a la date que la photo à été prise
+	- soiré/journé organiser ( anniversaire, souper avec amis...)
+	-Perdsonnaliser notre propre calendrier ( ex couleur du calendrier... Sections ajouter manuellement... )
+	-rappel ( quelqun tinvite quelque part et tu ecris la date, mais n'est pas certain si oui ou non tu vas y aller, le calendrier t'envoie une notification(sur tout tes appareils et te 
+	demande si oui ou non tu iras finalement. a tout les jours jusqu'à ce que tu répond.)
+	- section caché pour journal intime 
+	-tracker pour les règles ( avec conseils)
+	-calcule le nombre dheure de travail ou d'école prevu pour jour/semaine/mois/année vs le nombre d'heures reelle avec diagramme
+	-dossier avec tout les numéros et adresses courriels importants à retenir 
+	-
+-Budjet 
+	-entré d'argent 
+	-compte fixe 
+	-compte variable (ex épicerie )
+	-Dépense récurrente ( qui revient 1 a deux fois par année ex: anniversaire)
+	-Dépense voiture ( plaques, changement dhuile, pneu, reparation...)
+	-Dépense non obligatoire ( vêtement )
+	-plan pour mettre de l'argent de côté ( avec liste de souhait et petit plan pour mettre les choses en place )
+	-calcul automatique 
+	-Épargne 
+	-Voir en temps réelle l'état de nos comptes
+	-section impots ( ex:t4, facture de bureau, facture de medicaments, ecole ) bref tout ce qune personne peut mettre sur ses impots et pouvoir caché les section qui ne nous 
+	  concerne pas.)-s'informer de tout ce que nous pouvons mettre sur nos impot
+	-numériser les facture pour pouvoir les mettres dans la section impots
+	
+
+
+-Notes 
+	- couleur ajustable pour chaque note 
+	- comme une vrai feuille 
+	- note sur papier libre ( apres plusieur notes avec le meme sujet, pouvoir les rassenbler voir note du cipl ( pouvoir les trier )
+	- section recherche ( par dates et par mots clés ) 
+	- comme one drive, on peut créer des fichiers mais dans ce fichier tu peux ecrire une nouvelles notes ou en continuer une sans etre obliger douvrir word ou google. 
+	- pouvoir creer des sous note a partir dune seule note 
+	- 
+
+
