@@ -1,4 +1,4 @@
 <?php
-header("Location: pages/login-form.php");
+header("Location: pages/login/login-form.php");
 exit;
 ?>

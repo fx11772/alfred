@@ -22,7 +22,7 @@ $stmt->bindParam(':password', $hashed_password);
 $stmt->execute();
 
 // Redirect the user to the login page
-header('Location: ../pages/login-form.php');
+header('Location: ../pages/login/login-form.php');
 exit();
 ?>
 
@@ -36,6 +36,6 @@ exit();
   <title>Registration Form</title>
 </head>
 <body>
-  <?php require('pages/register-form.php'); ?>
+  <?php require('pages/login/register-form.php'); ?>
 </body>
 </html>
