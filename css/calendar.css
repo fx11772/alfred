@@ -13,20 +13,20 @@
 
 .modules {
     border: 1px solid black;
-    width: 25%;
+    width: 15%;
     height: 98%;
     margin: 5px 5px 5px 0px;
 }
 
 .calendar {
-    width: 50%;
+    width: 70%;
     height: 98%;
     margin: 5px 5px 5px 5px;
 }
 
 .action_bar {
     border: 1px solid black;
-    width: 25%;
+    width: 15%;
     height: 98%;
     margin: 5px 0px 5px 5px;
 }

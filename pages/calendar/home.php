@@ -15,6 +15,7 @@
             <div id="dayButton">Day</div>
             <div id="weekButton">Week</div>
             <div id="monthButton">Month</div>
+            <div id="yearButton">Year</div>
         </div>
     </div>
     <div class="mainSection">
