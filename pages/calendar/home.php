@@ -11,7 +11,11 @@
 </head>
 <body>
     <div class="header">
-        
+        <div class="buttonContainer">
+            <div id="dayButton">Day</div>
+            <div id="weekButton">Week</div>
+            <div id="monthButton">Month</div>
+        </div>
     </div>
     <div class="mainSection">
         <div class="modules"></div>
