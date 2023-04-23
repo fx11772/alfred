@@ -10,7 +10,9 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="header"></div>
+    <div class="header">
+        
+    </div>
     <div class="mainSection">
         <div class="modules"></div>
         <div id="calendar" class="calendar"></div>

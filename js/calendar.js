@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
       headerToolbar: {
         left: 'prev,next',
         center: 'title',
-        right: 'dayGridWeek,dayGridDay' // user can switch between the two
+        right: 'dayGridWeek,dayGridDay' // user can switch between the tw0
       }
     });
     calendar.render();
