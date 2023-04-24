@@ -5,16 +5,22 @@ document.addEventListener('DOMContentLoaded', function() {
     var yearButton = document.getElementById('yearButton');
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
-      initialView: 'dayGridMonth',
-      header: false
+        initialView: 'dayGridMonth',
+        monthMode: 'variable',
+        fixedWeekCount: false,
+        monthsPerRow: 3,
+        themeSystem: 'bootstrap5',
+        timeZone: 'UTC',
+        allDaySlot: false,
+        slotDuration: '00:15:00'
     });
 
     dayButton.addEventListener('click', function(){
-        calendar.changeView('dayGridDay');
+        calendar.changeView('timeGridDay');
     });
 
     weekButton.addEventListener('click', () => {
-        calendar.changeView('dayGridWeek');
+        calendar.changeView('timeGridWeek');
     });
 
     monthButton.addEventListener('click', () => {
@@ -22,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     yearButton.addEventListener('click', () => {
-        calendar.changeView('dayGridYear');
+        calendar.changeView('multiMonthYear');
     })
 
     calendar.render();
