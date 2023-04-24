@@ -5,6 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var yearButton = document.getElementById('yearButton');
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
+        headerToolbar: {
+            start: 'title',
+            center: '',
+            end: 'prev, next'
+        },
         initialView: 'dayGridMonth',
         monthMode: 'variable',
         fixedWeekCount: false,
