@@ -3,10 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
     var weekButton = document.getElementById('weekButton');
     var monthButton = document.getElementById('monthButton');
     var yearButton = document.getElementById('yearButton');
+
+    var viewDate = document.getElementById('viewDate');
+
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
         headerToolbar: {
-            start: 'title',
+            start: '',
             center: '',
             end: 'prev, next'
         },
@@ -14,10 +17,14 @@ document.addEventListener('DOMContentLoaded', function() {
         monthMode: 'variable',
         fixedWeekCount: false,
         monthsPerRow: 3,
-        themeSystem: 'bootstrap5',
         timeZone: 'UTC',
         allDaySlot: false,
         slotDuration: '00:15:00'
+    });
+
+    viewDate.innerHTML = calendar.getDate().toLocaleString('default', {
+        month: 'long',
+        year: 'numeric'
     });
 
     dayButton.addEventListener('click', function(){

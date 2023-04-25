@@ -7,12 +7,11 @@
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js'></script>
     <script src="../../js/calendar.js"></script>
     <link rel="stylesheet" type="text/css" href="../../css/calendar.css">
-    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet'>
-    <link href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css' rel='stylesheet'>
     <title>Document</title>
 </head>
 <body>
-    <div class="header">
+    <div id="headerContainer" class="header">
+        <div id="viewDate" class="viewDate"></div>
         <div class="buttonContainer">
             <div id="dayButton">Day</div>
             <div id="weekButton">Week</div>
