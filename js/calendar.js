@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var viewDate = document.getElementById('viewDate');
 
+    var backBtn = document.getElementById('backBtn');
+    var nextBtn = document.getElementById('nextBtn');
+
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
         headerToolbar: {
@@ -41,7 +44,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     yearButton.addEventListener('click', () => {
         calendar.changeView('multiMonthYear');
-    })
+    });
+
+    backBtn.addEventListener('click', () => {
+        calendar.prev();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        calendar.next();
+    });
 
     calendar.render();
   });

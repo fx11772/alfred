@@ -72,6 +72,8 @@
 
 .backBtn {
     position: relative;
+    z-index: 10;
+    cursor: pointer;
     left: 430px;
     top: 20px;
     max-width: 20px;
@@ -80,6 +82,8 @@
 
 .nextBtn {
     position: relative;
+    z-index: 10;
+    cursor: pointer;
     left: 815px;
     max-width: 20px;
     height: 20px;
