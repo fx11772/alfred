@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         headerToolbar: {
             start: '',
             center: '',
-            end: 'prev, next'
+            end: ''
         },
         initialView: 'dayGridMonth',
         monthMode: 'variable',
