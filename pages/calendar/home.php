@@ -11,6 +11,14 @@
 </head>
 <body>
     <div id="headerContainer" class="header">
+        <div class="backBtn"
+             id="backBtn">
+            <img src="../../css/assets/icons/angle-left-solid.svg" />
+        </div>
+        <div class="nextBtn"
+             id="nextBtn">
+            <img src="../../css/assets/icons/angle-right-solid.svg" />
+        </div>
         <div id="viewDate" class="viewDate"></div>
         <div class="buttonContainer">
             <div id="dayButton">Day</div>

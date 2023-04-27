@@ -38,7 +38,8 @@
     cursor: pointer;
     border-radius: 5px;
     left: 50%;
-    top: 14%;
+    top: 12%;
+    margin-bottom: 20px;
     transform: translate(-50%);
 }
 
@@ -57,9 +58,9 @@
 }
 
 .viewDate {
-    border: 1px solid black;
     position: absolute;
     left: 50%;
+    top: 20px;
     transform: translate(-50%);
     width: 450px;
     height: 50px;
@@ -67,4 +68,23 @@
     align-items: center;
     justify-content: center;
     font-size: x-large;
+}
+
+.backBtn {
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    left: 430px;
+    top: 20px;
+    max-width: 20px;
+    height: 20px;
+}
+
+.nextBtn {
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    left: 815px;
+    max-width: 20px;
+    height: 20px;
 }
