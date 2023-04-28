@@ -32,27 +32,67 @@ document.addEventListener('DOMContentLoaded', function() {
 
     dayButton.addEventListener('click', function(){
         calendar.changeView('timeGridDay');
+        viewDate.innerHTML = updateTitle(calendar.view);
     });
 
     weekButton.addEventListener('click', () => {
         calendar.changeView('timeGridWeek');
+        viewDate.innerHTML = updateTitle(calendar.view);
     });
 
     monthButton.addEventListener('click', () => {
         calendar.changeView('dayGridMonth');
+        viewDate.innerHTML = updateTitle(calendar.view);
     });
 
     yearButton.addEventListener('click', () => {
         calendar.changeView('multiMonthYear');
+        viewDate.innerHTML = '';
     });
 
     backBtn.addEventListener('click', () => {
         calendar.prev();
+        viewDate.innerHTML = updateTitle(calendar.view);
     });
 
     nextBtn.addEventListener('click', () => {
         calendar.next();
+        viewDate.innerHTML = updateTitle(calendar.view);
     });
 
     calendar.render();
   });
+
+  function updateTitle(view) {
+    var title = '';
+
+    switch(view.type) {
+        case "timeGridDay":
+            title = view.currentStart.toLocaleString('default', {
+                weekday: 'short',
+                month: 'long',
+                day: 'numeric',
+                year: 'numeric',
+                timeZone: 'America/Toronto'
+      });
+            break;
+        case 'timeGridWeek':
+            var start = view.currentStart.toLocaleString('default', {
+                weekday: 'short',
+                day: 'numeric'
+            });
+              var end = view.currentEnd.toLocaleString('default', {
+                weekday: 'short',
+                day: 'numeric'
+            });
+            title = `${start} - ${end}`;
+            break;
+        case 'dayGridMonth':
+            title = view.currentStart.toLocaleString('default', {
+                month: 'long',
+                year: 'numeric'
+            })
+            break;
+    }
+    return title;
+  }
