@@ -32,18 +32,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     dayButton.addEventListener('click', function(){
         calendar.changeView('timeGridDay');
+        viewDate.innerHTML = updateTitle(calendar.view);
     });
 
     weekButton.addEventListener('click', () => {
         calendar.changeView('timeGridWeek');
+        viewDate.innerHTML = updateTitle(calendar.view);
     });
 
     monthButton.addEventListener('click', () => {
         calendar.changeView('dayGridMonth');
+        viewDate.innerHTML = updateTitle(calendar.view);
     });
 
     yearButton.addEventListener('click', () => {
         calendar.changeView('multiMonthYear');
+        viewDate.innerHTML = '';
     });
 
     backBtn.addEventListener('click', () => {
