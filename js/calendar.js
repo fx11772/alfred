@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
         timeZone: 'UTC',
         allDaySlot: false,
         slotDuration: '00:15:00',
-        firstDay: 0
+        firstDay: 1,
+        selectable: true
     });
 
     viewDate.innerHTML = calendar.getDate().toLocaleString('default', {
