@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
         slotDuration: '00:15:00',
         firstDay: 1,
         selectable: true,
-        selectMirror: true
+        selectMirror: true,
+        nowIndicator: true
     });
 
     viewDate.innerHTML = calendar.getDate().toLocaleString('default', {
