@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
         allDaySlot: false,
         slotDuration: '00:15:00',
         firstDay: 1,
-        selectable: true
+        selectable: true,
+        selectMirror: true
     });
 
     viewDate.innerHTML = calendar.getDate().toLocaleString('default', {
