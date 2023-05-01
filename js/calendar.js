@@ -22,7 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
         monthsPerRow: 3,
         timeZone: 'UTC',
         allDaySlot: false,
-        slotDuration: '00:15:00'
+        slotDuration: '00:15:00',
+        firstDay: 1,
+        selectable: true,
+        selectMirror: true,
+        nowIndicator: true
     });
 
     viewDate.innerHTML = calendar.getDate().toLocaleString('default', {
@@ -47,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     yearButton.addEventListener('click', () => {
         calendar.changeView('multiMonthYear');
-        viewDate.innerHTML = '';
+        viewDate.innerHTML = updateTitle(calendar.view);
     });
 
     backBtn.addEventListener('click', () => {
@@ -68,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     switch(view.type) {
         case "timeGridDay":
-            title = view.currentStart.toLocaleString('default', {
+            title = view.currentEnd.toLocaleString('default', {
                 weekday: 'short',
                 month: 'long',
                 day: 'numeric',
@@ -88,10 +92,15 @@ document.addEventListener('DOMContentLoaded', function() {
             title = `${start} - ${end}`;
             break;
         case 'dayGridMonth':
-            title = view.currentStart.toLocaleString('default', {
+            title = view.currentEnd.toLocaleString('default', {
                 month: 'long',
                 year: 'numeric'
-            })
+            });
+            break;
+        case 'multiMonthYear':
+            title = view.currentEnd.toLocaleString('default', {
+                year: 'numeric'
+            });
             break;
     }
     return title;
