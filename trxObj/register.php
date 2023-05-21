@@ -3,6 +3,8 @@
 $user_name = $_POST['username'];
 $email = $_POST['email'];
 $password = $_POST['password'];
+$firstName = $_POST['firstName'];
+$lastName = $_POST['lastName'];
 
 // Hash the password using the password_hash() function
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
@@ -11,12 +13,14 @@ $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 require '../includes/db_connection.php';
 
 // Prepare a SQL statement to insert a new record into the "users" table
-$stmt = $pdo->prepare("INSERT INTO User (username, email, password, created_at) VALUES (:username, :email, :password, NOW())");
+$stmt = $pdo->prepare("INSERT INTO UserProfile (username, emailAddress, firstName, lastName, password, created_at) VALUES (:username, :email, :firstName, :lastName, :password, NOW())");
 
 // Bind the parameters to the named placeholders in the SQL statement
 $stmt->bindParam(':username', $user_name);
 $stmt->bindParam(':email', $email);
 $stmt->bindParam(':password', $hashed_password);
+$stmt->bindParam(':firstName', $firstName);
+$stmt->bindParam(':lastName', $lastName);
 
 // Execute the SQL statement
 $stmt->execute();
