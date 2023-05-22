@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js'></script>
     <script src="../../js/calendar.js"></script>
-    <link rel="stylesheet" type="text/css" href="../../css/calendar.css">
+    <script src="../../js/PopupManager.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/calendar/calendar.css">
     <title>Document</title>
 </head>
 <body>
@@ -26,11 +27,18 @@
             <div id="monthButton">Month</div>
             <div id="yearButton">Year</div>
         </div>
+        <div class="addEventButtonContainer">
+            <div id="addEventButton">Add Event</div>
+        </div>
     </div>
     <div class="mainSection">
         <div class="modules"></div>
         <div id="calendar" class="calendar"></div>
         <div class="action_bar"></div>
+        <div class="popup" id="popup">
+            <?php include 'createmode/addEvent.php'; ?>
+        </div>
+        <div class="calendar-overlay" id="calendar-overlay"></div>
     </div>
 </body>
 </html>

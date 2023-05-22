@@ -2,7 +2,7 @@
 
 // Database credentials
 $host = "localhost";
-$dbname = "Jarvis";
+$dbname = "Alfred";
 $username = "root";
 $password = "root";
 

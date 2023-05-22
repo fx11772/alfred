@@ -12,6 +12,12 @@
   <label for="username">Username:</label>
   <input type="text" name="username" id="username" value="">
 
+  <label for="firstName">First Name:</label>
+  <input type="text" name="firstName" id="firstName" value="">
+
+  <label for="lastName">Last Name:</label>
+  <input type="text" name="lastName" id="lastName" value="">
+
   <label for="email">Email:</label>
   <input type="email" name="email" id="email" value="">
 

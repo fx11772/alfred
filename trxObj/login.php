@@ -9,7 +9,7 @@ require_once '../includes/db_connection.php';
 $dbh = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 
 // Prepare a SELECT statement to retrieve the user with the provided username
-$stmt = $dbh->prepare("SELECT * FROM User WHERE username = :username LIMIT 1");
+$stmt = $dbh->prepare("SELECT * FROM UserProfile WHERE username = :username LIMIT 1");
 $stmt->bindParam(':username', $user_name);
 $stmt->execute();
 

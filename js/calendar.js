@@ -26,7 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
         firstDay: 1,
         selectable: true,
         selectMirror: true,
-        nowIndicator: true
+        nowIndicator: true,
+        weekNumbers: true,
+        weekText: ""
     });
 
     viewDate.innerHTML = calendar.getDate().toLocaleString('default', {
