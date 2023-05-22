@@ -43,6 +43,18 @@
     transform: translate(-50%);
 }
 
+.addEventButtonContainer {
+    position: absolute;
+    display: flex;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    left: 75%;
+    top: 10%;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
 .buttonContainer div {
     text-align: center;
     border-left: 1px solid rgb(1, 1, 1);
@@ -88,3 +100,4 @@
     max-width: 20px;
     height: 20px;
 }
+  
