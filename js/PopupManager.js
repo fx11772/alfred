@@ -13,6 +13,18 @@ class PopupManager {
     });
 
     this.overlay = document.getElementById("calendar-overlay");
+
+    this.monthGridDay = document.getElementsByClassName("fc-daygrid-day-frame");
+    this.attachClickListeners();
+  }
+
+  attachClickListeners() {
+    for (let i = 0; i < this.monthGridDay.length; i++) {
+      const day = this.monthGridDay[i];
+      day.addEventListener('click', () => {
+        this.openPopup();
+      });
+    }
   }
 
   openPopup() {
