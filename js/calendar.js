@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const popupManager = new PopupManager();
+
     var dayButton = document.getElementById('dayButton');
     var weekButton = document.getElementById('weekButton');
     var monthButton = document.getElementById('monthButton');
@@ -28,7 +30,20 @@ document.addEventListener('DOMContentLoaded', function() {
         selectMirror: true,
         nowIndicator: true,
         weekNumbers: true,
-        weekText: ""
+        weekText: "",
+
+        select: function(info) {
+            var startDate = moment(info.start).format('YYYY-MM-DD');
+            var endDate = moment(info.end).format('YYYY-MM-DD');
+
+            // Vérifiez si les dates de début et de fin sont dans la même semaine
+            var isSameWeek = moment(info.start).isSame(info.end, 'week');
+            if (isSameWeek) {
+            endDate = moment(info.end).add(1, 'days').format('YYYY-MM-DD');
+            }
+        
+            popupManager.openPopup(startDate, endDate);
+        }
     });
 
     viewDate.innerHTML = calendar.getDate().toLocaleString('default', {

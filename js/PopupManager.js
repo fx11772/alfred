@@ -27,10 +27,13 @@ class PopupManager {
     }
   }
 
-  openPopup() {
+  openPopup(startDate, endDate) {
     this.popup.classList.add('active');
     this.popup.style.display = 'block';
     this.overlay.classList.add('active');
+
+    document.getElementById('start').value = startDate;
+    document.getElementById('end').value = endDate;
   }
 
   closePopup() {
